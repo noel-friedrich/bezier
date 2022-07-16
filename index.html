@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bézier Maker</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <canvas id="canvas"></canvas>
+        <input type="range" min="0" max="1000" value="0" id="t-slider">
+        <button id="animate-btn">Animate</button>
+
+        <div class="info-popup" id="info-popup">
+            <div class="popup-header">
+                <h1>Tutorial</h1>
+                <button class="close-btn" id="info-close-btn">&times;</button>
+            </div>
+            <div class="popup-content">
+                <ol>
+                    <li>click (or touch) any position to add a point to the curve</li>
+                    <li>add 3 or more points in total to create a bezier curve</li>
+                    <li>click the "Animate" button to see the curve generate</li>
+                    <ul>
+                        <li>or move the slider manually to see different stages</li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+
+        <script src="js/vector.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
